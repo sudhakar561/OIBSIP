@@ -8,41 +8,188 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>OASIS INFOBYTE PROJECT</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./">OASIS INFOBYTE</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Landing Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Temperature Converter </a>
-                            </li>
-                        </ul>
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+    <header class="oi-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="./"><span class="dif-bg">OASIS</span> INFOBYTE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Landing Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Temperature Converter</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-sec">
+            <img src="images/hero-pic.webp" alt="Hero Banner" class="w-100 img-fluid">
+            <div class="hero-tittle-box">
+                <div class="container">
+                    <h1>Discover the Wild Heart of Africa</h1>
+                    <h2>Experience the Adventure of a Lifetime</h2>
+                    <a class="main-btn">Customize Trip</a>
+                </div>
+            </div>
+        </section>
+        <section class="about-sec">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <div class="ab_pic_box">
+                            <img src="images/about-pic.webp" alt="About Africa" class="w-100 img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="common-tille-box">
+                            <h2>Why Safari With Us</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit in quaerat autem
+                                voluptatibus adipisci aperiam deserunt aspernatur possimus aliquam vero numquam hic quia
+                                cum saepe omnis eaque, nostrum veritatis?
+                                Magnam fugit quos ad? Obcaecati nesciunt omnis, cumque similique, quidem, ullam laborum
+                                sed deserunt iure alias deleniti incidunt. Ea voluptate fugiat at eius reiciendis
+                                consequatur, aspernatur recusandae voluptatibus minima itaque!
+                                Nihil voluptatum enim culpa error. Minus in assumenda dignissimos laudantium fuga
+                                consequatur reiciendis dolores quod magnam, quas labore omnis animi nulla praesentium
+                                exercitationem ratione perspiciatis numquam nesciunt laboriosam soluta eum!
+                                Nostrum beatae quibusdam explicabo corporis perspiciatis nobis perferendis, molestias
+                                deserunt repellat laboriosam, eaque natus pariatur porro officia. Libero perferendis
+                                quisquam eum. Quam nihil quod, hic quos quasi libero. Laboriosam, deleniti.
+                                Rem excepturi est a suscipit, et labore inventore sapiente doloribus quas vitae dolorum
+                                natus exercitationem magnam delectus, voluptatibus corporis quia explicabo iste deserunt
+                                amet debitis esse mollitia? Asperiores, nostrum similique.</p>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </header>
+            </div>
+        </section>
+        <section class="services-sec">
+            <div class="container">
+                <div class="common-tille-box bg-col mb-5">
+                    <h2>Explore <span>Our</span> Tours</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit in quaerat autem voluptatibus
+                        adipisci aperiam deserunt aspernatur possimus aliquam vero numquam hic quia cum saepe omnis
+                        eaque, nostrum veritatis?</p>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-4">
+                        <div class="card-safari-box">
+                            <a href="#">
+                                <div class="ser-card-pic">
+                                    <img src="images/land1.webp" alt="Service 1" class="w-100 img-fluid">
+                                </div>
+                                <div class="ser-cad-del">
+                                    <h3>Tanzania Safaris</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit in quaerat
+                                        autem</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-safari-box">
+                            <a href="#">
+                                <div class="ser-card-pic">
+                                    <img src="images/land2.webp" alt="Service 2" class="w-100 img-fluid">
+                                </div>
+                                <div class="ser-cad-del">
+                                    <h3>Namibia Adventures</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit in quaerat
+                                        autem</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-safari-box">
+                            <a href="#">
+                                <div class="ser-card-pic">
+                                    <img src="images/land3.webp" alt="Service 3" class="w-100 img-fluid">
+                                </div>
+                                <div class="ser-cad-del">
+                                    <h3>Kenya Wildlife</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit in quaerat
+                                        autem</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-safari-box">
+                            <a href="#">
+                                <div class="ser-card-pic">
+                                    <img src="images/land4.webp" alt="Service 4" class="w-100 img-fluid">
+                                </div>
+                                <div class="ser-cad-del">
+                                    <h3>Botswana Expeditions</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit in quaerat
+                                        autem</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-safari-box">
+                            <a href="#">
+                                <div class="ser-card-pic">
+                                    <img src="images/land5.webp" alt="Service 5" class="w-100 img-fluid">
+                                </div>
+                                <div class="ser-cad-del">
+                                    <h3>Zimbabwe Discoveries</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit in quaerat
+                                        autem</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card-safari-box">
+                            <a href="#">
+                                <div class="ser-card-pic">
+                                    <img src="images/land6.webp" alt="Service 6" class="w-100 img-fluid">
+                                </div>
+                                <div class="ser-cad-del">
+                                    <h3>South Africa Tours</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit in quaerat
+                                        autem</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
