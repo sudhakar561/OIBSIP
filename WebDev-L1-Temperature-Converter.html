@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Temperature Converter | OASIS INFOBYTE PROJECT</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="oi-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="./"><span class="dif-bg">OASIS</span> INFOBYTE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./">Landing Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="WebDev-L1-Portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="WebDev-L1-Temperature-Converter.html">Temperature Converter</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="temperature-sec">
+            <div class="container">
+                <div class="temp-con-box">
+                    <h1>Temperature Converter</h1>
+                    <div class="input-fild-box">
+                        <input type="number" id="temperature" placeholder="Enter temperature value">
+                        <select id="scale">
+                            <option value="celsius">Celsius (°C)</option>
+                            <option value="fahrenheit">Fahrenheit (°F)</option>
+                            <option value="kelvin">Kelvin (K)</option>
+                        </select>
+                    </div>
+                    <div class="io-button-box">
+                        <button onclick="convertTemperature()">Convert</button>
+                        <button class="rest-btn" onclick="resetConverter()">Reset</button>
+                    </div>
+                    <div class="result-box">
+                        <div class="result-card">
+                            <h3>Celsius</h3>
+                            <p id="celsius">0 C</p>
+                        </div>
+                        <div class="result-card">
+                            <h3>Fahrenheit</h3>
+                            <p id="fahrenheit">32 F</p>
+                        </div>
+                        <div class="result-card">
+                            <h3>Kelvin</h3>
+                            <p id="kelvin">273.15 K</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial-sec">
+            <div class="container">
+                <div class="common-tille-box bg-col mb-5">
+                    <h2>Explore <span>Our</span> Client Reviews</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit in quaerat autem voluptatibus
+                        adipisci aperiam deserunt aspernatur possimus aliquam vero numquam hic quia cum saepe omnis
+                        eaque, nostrum veritatis?</p>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimo-head">
+                                <img src="images/review1.jpg" alt="Testimonial 1" class="img-fluid">
+                                <div class="client-bio">
+                                    <h4>John Doe</h4>
+                                    <p>Traveler</p>
+
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua."</p>
+                                <a href="#" class="rev-btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimo-head">
+                                <img src="images/review2.jpg" alt="Testimonial 2" class="img-fluid">
+                                <div class="client-bio">
+                                    <h4>John Doe</h4>
+                                    <p>Traveler</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua."</p>
+                                <a href="#" class="rev-btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial-card">
+                            <div class="testimo-head">
+                                <img src="images/review3.jpg" alt="Testimonial 3" class="img-fluid">
+                                <div class="client-bio">
+                                    <h4>John Doe</h4>
+                                    <p>Traveler</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua."</p>
+                                <a href="#" class="rev-btn">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="oi-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-4">
+                    <div class="footer-logo-box">
+                        <a href="./" class="navbar-brand"><span class="dif-bg">OASIS</span> INFOBYTE</a>
+                        <p class="mt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard dummy text ever since 1966, when designers at
+                            Letraset and James Mosley, the librarian at St Bride Printing Library in London</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-nav-box">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="./">Landing Page</a></li>
+                            <li><a href="WebDev-L1-Portfolio.html">Portfolio</a></li>
+                            <li><a href="WebDev-L1-Temperature-Converter.html">Temperature Converter</a></li>
+                            <li><a href="#">More About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-nav-box">
+                        <h3>Connect With Us</h3>
+                        <ul>
+                            <li>Email: info@oasisinfobyte.com</li>
+                            <li>Phone: +1 (123) 456-7890</li>
+                            <li>Address: 123 Main Street, City, Country</li>
+                        </ul>
+                        <ul class="social-links">
+                            <li><a href="#"><img src="images/facebook-logo.svg" alt="Facebook"></a></li>
+                            <li><a href="#"><img src="images/twitter-logo.svg" alt="Twitter"></a></li>
+                            <li><a href="#"><img src="images/instagram-logo.svg" alt="Instagram"></a></li>
+                            <li><a href="#"><img src="images/github-logo.svg" alt="GitHub"></a></li>
+                            <li><a href="#"><img src="images/youtube-logo.svg" alt="YouTube"></a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="footer-bottom">
+        <div class="container">
+            <div class="copy-write-box">
+                <p>&copy; 2026 OASIS INFOBYTE TASK. All rights reserved.</p>
+                <p>Designed by <a href="https://sudhakarnayak.com/" target="_blank">Sudhakar Nayak</a></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function convertTemperature() {
+            const temperatureInput = document.getElementById('temperature').value;
+            const scale = document.getElementById('scale').value;
+
+            let celsius, fahrenheit, kelvin;
+
+            if (scale === 'celsius') {
+                celsius = parseFloat(temperatureInput);
+                fahrenheit = (celsius * 9 / 5) + 32;
+                kelvin = celsius + 273.15;
+            } else if (scale === 'fahrenheit') {
+                fahrenheit = parseFloat(temperatureInput);
+                celsius = (fahrenheit - 32) * 5 / 9;
+                kelvin = celsius + 273.15;
+            } else if (scale === 'kelvin') {
+                kelvin = parseFloat(temperatureInput);
+                celsius = kelvin - 273.15;
+                fahrenheit = (celsius * 9 / 5) + 32;
+            }
+
+            document.getElementById('celsius').textContent = `${celsius.toFixed(2)} °C`;
+            document.getElementById('fahrenheit').textContent = `${fahrenheit.toFixed(2)} °F`;
+            document.getElementById('kelvin').textContent = `${kelvin.toFixed(2)} K`;
+        }
+
+        function resetConverter() {
+            document.getElementById('temperature').value = '';
+            document.getElementById('scale').value = 'celsius';
+            document.getElementById('celsius').textContent = '0 °C';
+            document.getElementById('fahrenheit').textContent = '32 °F';
+            document.getElementById('kelvin').textContent = '273.15 K';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
