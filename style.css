@@ -94,7 +94,7 @@ section.hero-sec:after {
     line-height: 1.2;
     margin-bottom: 60px;
 }
-.hero-tittle-box a {
+a.main-btn {
     font-size: 17px;
     color: #000;
     font-weight: 900;
@@ -105,7 +105,7 @@ section.hero-sec:after {
     text-decoration: none;
     border: 1px solid #d6ff00;
 }
-.hero-tittle-box a:hover {
+a.main-btn:hover {
     background: transparent;
     color: #fff;
 }
@@ -360,8 +360,151 @@ button.rest-btn:hover {
     font-size: clamp(14px, 1.5vw, 20px);
 }
 
-
-
+/* Profile Page Css */
+section.pro-hero-sec {
+    width: 100%;
+    background: #000;
+    padding: 120px 0px 60px 0px;
+    overflow: hidden;
+}
+.pro-hero-img {
+    position: relative;
+    border: 3px solid #d6ff00;
+    border-radius: 25px;
+    overflow: hidden;
+}
+p.he-bg-pa {
+    color: #d6ff00 !important;
+}
+.pro-hero-content h1 {
+    font-size: clamp(28px, 5vw, 55px);
+    color: #fff;
+    font-weight: 900;
+    line-height: 1.2;
+}
+.pro-hero-content h1 span {
+    color: #d6ff00;
+}
+.pro-hero-content h2 {
+    color: #e6e6e6a6;
+}
+.pro-hero-content p {
+    color: #b9b9b7;
+    margin-bottom: 50px;
+}
+section.pro-hero-sec .row.g-5 {
+    align-items: center;
+}
+section.about-me-sec {
+    background: #070707;
+    padding: 80px 0px;
+    overflow: hidden;
+}
+.about-me-content h2 {
+    font-size: clamp(28px, 5vw, 50px);
+    color: #fff;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.about-me-content h2 span {
+    color: #d6ff00;
+}
+.about-me-content p {
+    color: #b9b9b7;
+}
+.achievement-card {
+    border: 1px solid #e6e6e624;
+    border-radius: 22px;
+    padding: 26px;
+    background: #0d0d0d;
+    height: 100%;
+    transition: .3s;
+}
+.achievement-card:hover {
+    border: 1px solid #d6ff00;
+    transform: translateY(-4px);
+    transition: .3s;
+}
+.achievement-card h3 {
+    font-size: clamp(28px, 5vw, 55px);
+    color: #d6ff00;
+    font-weight: 900;
+}
+.achievement-card p {
+    color: #b9b9b7;
+    margin: 0px;
+}
+section.my-skills-sec {
+    width: 100%;
+    position: relative;
+    padding: 80px 0px;
+    background: #000;
+    overflow: hidden;
+}
+.my-skills-par {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 40px;
+    gap: 20px;
+    align-items: center;
+}
+.skill-card {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "logo pc"
+        "name name"
+        "bar bar";
+    text-align: left;
+    padding: 30px;
+    border: 1px solid #e6e6e624;
+    border-radius: 10px;
+    justify-items: center;
+    align-items: center;
+}
+.skill-card:hover {
+    border: 1px solid #d6ff00;
+    transform: translateY(-4px);
+    transition: .3s;
+}
+.skill-card h3 {
+    margin: 0px;
+    color: #e6e6e6a6;
+}
+.str-card {
+    padding: 20px;
+    border: 1px solid #e6e6e624;
+    border-radius: 10px;
+}
+.str-card h4 {
+    color: #d6ff00;
+    margin-bottom: 20px;
+}
+.str-card ul {
+    padding-left: 15px;
+    color: #b9b9b7;
+    line-height: 2;
+}
+section.connect-me-sec {
+    background: #070707;
+    padding: 80px 0px;
+    overflow: hidden;
+}
+.str-card img {
+    min-width: 45px;
+    max-width: 45px;
+    margin-bottom: 20px;
+}
+.str-card a {
+    text-decoration: none;
+}
+.str-card:hover {
+    border: 1px solid #d6ff00;
+    transform: translateY(-4px);
+    transition: .3s;
+}
 /* Responsive Css  */
 @media (max-width: 767px) {
     section.hero-sec img {
@@ -391,4 +534,11 @@ button.rest-btn:hover {
 .result-box {
         grid-template-columns: 1fr;
     }
+.my-skills-par {
+    grid-template-columns: repeat(2, 1fr);
+}
+.skill-card {
+    display: flex;
+    flex-direction: column;
+}
 }
